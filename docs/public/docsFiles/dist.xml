@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<document title="Dist">
+    <p>This folder contains builded CSS files</p>
+
+    <snippet language="plaintext">
+        ./dist
+        ├── frekui.css            ⎫ - Tailwind Based files (@apply)
+        ├── frekui.min.css        ⎭
+        └── frekui.standalone.css } - Plain CSS (without @apply and etc.)
+
+        1 directory, 3 files
+    </snippet>
+
+<!--    <snippet language="html" file="installation"/>-->
+    <!--    <Snippet file="installation" language="html" />-->
+    <!--    <Snippet file="installation" language="sh" />-->
+</document>

@@ -1,0 +1,209 @@
+.btn {
+  @apply px-4 py-2 mb-2 rounded-xl;
+  background-color: var(--frekui-btn-bg-color);
+  color: var(--frekui-btn-text-color);
+}
+.btn.btn-none {
+  @apply bg-white text-black border;
+}
+.btn.btn-none:hover {
+  @apply bg-neutral-100;
+}
+.btn.btn-none:active {
+  @apply bg-neutral-200;
+}
+.btn.btn-success {
+  --frekui-btn-bg-color: theme(colors.green.500);
+  --frekui-btn-text-color: theme(colors.white);
+}
+.btn.btn-success:hover {
+  --frekui-btn-bg-color: theme(colors.green.400);
+}
+.btn.btn-success:active {
+  --frekui-btn-bg-color: theme(colors.green.600);
+}
+.btn.btn-success:disabled {
+  --frekui-btn-bg-color: theme(colors.green.600);
+  --frekui-btn-text-color: theme(colors.neutral.100);
+}
+.btn.btn-flat-success {
+  --frekui-btn-bg-color: theme(colors.green.200);
+  --frekui-btn-text-color: theme(colors.green.500);
+}
+.btn.btn-flat-success:hover {
+  --frekui-btn-bg-color: theme(colors.green.100);
+}
+.btn.btn-flat-success:active {
+  --frekui-btn-bg-color: theme(colors.green.300);
+}
+.btn.btn-danger {
+  --frekui-btn-bg-color: theme(colors.red.500);
+  --frekui-btn-text-color: theme(colors.white);
+}
+.btn.btn-danger:hover {
+  --frekui-btn-bg-color: theme(colors.red.400);
+}
+.btn.btn-danger:active {
+  --frekui-btn-bg-color: theme(colors.red.600);
+}
+.btn.btn-danger:disabled {
+  --frekui-btn-bg-color: theme(colors.red.600);
+  --frekui-btn-text-color: theme(colors.neutral.100);
+}
+.btn.btn-flat-danger {
+  --frekui-btn-bg-color: theme(colors.red.200);
+  --frekui-btn-text-color: theme(colors.red.500);
+}
+.btn.btn-flat-danger:hover {
+  --frekui-btn-bg-color: theme(colors.red.100);
+}
+.btn.btn-flat-danger:active {
+  --frekui-btn-bg-color: theme(colors.red.300);
+}
+.btn.btn-warning {
+  --frekui-btn-bg-color: theme(colors.yellow.500);
+  --frekui-btn-text-color: theme(colors.white);
+}
+.btn.btn-warning:hover {
+  --frekui-btn-bg-color: theme(colors.yellow.400);
+}
+.btn.btn-warning:active {
+  --frekui-btn-bg-color: theme(colors.yellow.600);
+}
+.btn.btn-warning:disabled {
+  --frekui-btn-bg-color: theme(colors.yellow.600);
+  --frekui-btn-text-color: theme(colors.neutral.100);
+}
+.btn.btn-flat-warning {
+  --frekui-btn-bg-color: theme(colors.yellow.200);
+  --frekui-btn-text-color: theme(colors.yellow.500);
+}
+.btn.btn-flat-warning:hover {
+  --frekui-btn-bg-color: theme(colors.yellow.100);
+}
+.btn.btn-flat-warning:active {
+  --frekui-btn-bg-color: theme(colors.yellow.300);
+}
+.btn.btn-info {
+  --frekui-btn-bg-color: theme(colors.blue.500);
+  --frekui-btn-text-color: theme(colors.white);
+}
+.btn.btn-info:hover {
+  --frekui-btn-bg-color: theme(colors.blue.400);
+}
+.btn.btn-info:active {
+  --frekui-btn-bg-color: theme(colors.blue.600);
+}
+.btn.btn-info:disabled {
+  --frekui-btn-bg-color: theme(colors.blue.600);
+  --frekui-btn-text-color: theme(colors.neutral.100);
+}
+.btn.btn-flat-info {
+  --frekui-btn-bg-color: theme(colors.blue.200);
+  --frekui-btn-text-color: theme(colors.blue.500);
+}
+.btn.btn-flat-info:hover {
+  --frekui-btn-bg-color: theme(colors.blue.100);
+}
+.btn.btn-flat-info:active {
+  --frekui-btn-bg-color: theme(colors.blue.300);
+}
+.btn.loading {
+  opacity: 50%;
+  -webkit-mask-image: linear-gradient(130deg, rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.7) 75%, rgb(0, 0, 0) 95%);
+          mask-image: linear-gradient(130deg, rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.7) 75%, rgb(0, 0, 0) 95%);
+  -webkit-mask-size: 200% 100%;
+          mask-size: 200% 100%;
+  -webkit-animation: placeholder-wave 2s linear infinite;
+          animation: placeholder-wave 2s linear infinite;
+}
+@-webkit-keyframes placeholder-wave {
+  100% {
+    -webkit-mask-position: -200% 0%;
+            mask-position: -200% 0%;
+  }
+}
+@keyframes placeholder-wave {
+  100% {
+    -webkit-mask-position: -200% 0%;
+            mask-position: -200% 0%;
+  }
+}
+
+.box {
+  @apply p-4 rounded-2xl border mb-1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold mt-2;
+}
+
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+h4 {
+  @apply text-lg;
+}
+
+h6 {
+  @apply text-sm;
+}
+
+p {
+  @apply mb-1;
+}
+
+hr {
+  @apply my-1;
+}
+
+mark {
+  @apply bg-yellow-300;
+}
+
+code {
+  @apply bg-neutral-200 p-1 rounded-md font-mono;
+}
+
+kbd {
+  @apply bg-neutral-200 p-1 rounded-md font-mono;
+}
+
+a:not(.btn):not(.no-link), .link {
+  @apply text-blue-500;
+}
+a:not(.btn):not(.no-link):hover, .link:hover {
+  @apply text-blue-400;
+}
+
+.alert {
+  @apply p-4 mb-2 border rounded-2xl;
+}
+.alert.alert-success {
+  @apply bg-green-200 text-green-900 fill-green-900 border-green-300;
+}
+.alert.alert-danger {
+  @apply bg-red-200 text-red-900 fill-red-900 border-red-300;
+}
+.alert.alert-warning {
+  @apply bg-yellow-200 text-yellow-900 fill-yellow-900 border-yellow-300;
+}
+.alert.alert-info {
+  @apply bg-blue-200 text-blue-900 fill-blue-900 border-blue-300;
+}
+
+input.control, textarea.control {
+  @apply px-4 py-2 bg-white border rounded-xl;
+}
+input.control:disabled, textarea.control:disabled {
+  @apply bg-neutral-200;
+}

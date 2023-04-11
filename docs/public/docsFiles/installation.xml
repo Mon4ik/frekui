@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<document title="Installation">
+    <alert type="info">NOTE: Install Tailwind for first</alert>
+
+    <title>Via packet managers</title>
+    <snippet language="bash">npm i @idkncc/frekui@beta</snippet>
+    <snippet language="bash">yarn add @idkncc/frekui@beta</snippet>
+
+    <title>Build yourself</title>
+    <snippet language="bash">
+        yarn
+        yarn build
+        yarn link
+
+        # in other project
+
+        yarn link frekui
+    </snippet>
+
+    <title level="1">Usage</title>
+
+    <title level="2">In CSS</title>
+    <title level="3">SCSS</title>
+    <snippet language="scss">
+        // You can import whole
+        @import "~@idkncc/frekui/scss/frekui.scss";
+
+        // OR you can selectively import
+
+        @import "~@idkncc/frekui/scss/mixins";
+        @import "~@idkncc/frekui/scss/button";
+    </snippet>
+
+    <title level="3">CSS</title>
+    <snippet language="css">
+        @import url(https://unpkg.com/@idkncc/frekui@latest/dist/frekui.standalone.css);
+
+        /* if you are using tailwind */
+        /*            v */
+        @import url(https://unpkg.com/@idkncc/frekui@latest/dist/frekui.min.css);
+    </snippet>
+
+    <title level="2">JS (f.e. React)</title>
+    <snippet language="js">
+        import "@idkncc/frekui/dist/frekui.standalone.css"
+
+        // or if tailwind installed:
+        import "@idkncc/frekui/dist/frekui.min.css"
+    </snippet>
+
+    <title level="2">Plain HTML (without Tailwind)</title>
+    <snippet language="html">
+        <link href="https://unpkg.com/@idkncc/frekui@latest/dist/frekui.standalone.css" rel="stylesheet">
+    </snippet>
+
+    <snippet language="html" file="installation"/>
+    <!--    <Snippet file="installation" language="html" />-->
+    <!--    <Snippet file="installation" language="sh" />-->
+</document>

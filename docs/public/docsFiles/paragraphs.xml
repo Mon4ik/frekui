@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<document title="Paragraphs">
+    There a lot of HTML tags for formatting
+    <snippet language="html" preview="on">
+        <h1>Heading</h1>
+        <p>Paragraph</p>
+        <hr/>
+        <p><mark>mark</mark>, <code>Code</code>, <key>key</key></p>
+    </snippet>
+
+    <!--    <Snippet file="installation" language="html" />-->
+    <!--    <Snippet file="installation" language="sh" />-->
+</document>

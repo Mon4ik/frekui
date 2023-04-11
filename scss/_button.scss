@@ -1,0 +1,68 @@
+@use "mixins";
+
+.btn {
+  @apply px-4 py-2 mb-2 rounded-xl;
+
+  background-color: var(--frekui-btn-bg-color);
+  color: var(--frekui-btn-text-color);
+
+  &.btn-none {
+    @apply bg-white text-black border;
+
+    &:hover {
+      @apply bg-neutral-100
+    }
+
+    &:active {
+      @apply bg-neutral-200
+    }
+  }
+
+  &.btn-success {
+    @include mixins.button-builder("green", "white");
+  }
+
+  &.btn-flat-success {
+    @include mixins.button-flat-builder("green");
+  }
+
+
+  &.btn-danger {
+    @include mixins.button-builder("red", "white");
+  }
+
+  &.btn-flat-danger {
+    @include mixins.button-flat-builder("red");
+  }
+
+
+  &.btn-warning {
+    @include mixins.button-builder("yellow", "white");
+  }
+
+  &.btn-flat-warning {
+    @include mixins.button-flat-builder("yellow");
+  }
+
+
+  &.btn-info {
+    @include mixins.button-builder("blue", "white");
+  }
+
+  &.btn-flat-info {
+    @include mixins.button-flat-builder("blue");
+  }
+
+  &.loading {
+    opacity: 50%;
+    mask-image: linear-gradient(130deg, rgb(0, 0, 0) 55%, rgba(0, 0, 0, (1 - 0.3)) 75%, rgb(0, 0, 0) 95%);
+    mask-size: 200% 100%;
+    animation: placeholder-wave 2s linear infinite;
+
+    @keyframes placeholder-wave {
+      100% {
+        mask-position: -200% 0%;
+      }
+    }
+  }
+}

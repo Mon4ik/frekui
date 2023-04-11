@@ -1,0 +1,55 @@
+// -- Headers -- //
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold mt-2;
+}
+
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+h4 {
+  @apply text-lg;
+}
+
+h6 {
+  @apply text-sm;
+}
+
+// Other
+
+p {
+  @apply mb-1;
+}
+
+hr {
+  @apply my-1;
+}
+
+mark {
+  @apply bg-yellow-300;
+}
+
+code {
+  @apply bg-neutral-200 p-1 rounded-md font-mono;
+}
+
+kbd {
+  @apply bg-neutral-200 p-1 rounded-md font-mono;
+}
+
+a:not(.btn):not(.no-link), .link {
+  @apply text-blue-500;
+
+  &:hover {
+    @apply text-blue-400;
+  }
+}

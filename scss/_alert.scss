@@ -1,0 +1,21 @@
+@use "mixins";
+
+.alert {
+  @apply p-4 mb-2 border rounded-2xl;
+
+  &.alert-success {
+    @include mixins.alert-builder("green");
+  }
+
+  &.alert-danger {
+    @include mixins.alert-builder("red");
+  }
+
+  &.alert-warning {
+    @include mixins.alert-builder("yellow");
+  }
+
+  &.alert-info {
+    @include mixins.alert-builder("blue");
+  }
+}

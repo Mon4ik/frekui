@@ -1,0 +1,34 @@
+@mixin button-builder($bg-color, $text-color) {
+  --frekui-btn-bg-color: theme(colors.#{$bg-color}.500);
+  --frekui-btn-text-color: theme(colors.#{$text-color});
+
+  &:hover {
+    --frekui-btn-bg-color: theme(colors.#{$bg-color}.400);
+  }
+
+  &:active {
+    --frekui-btn-bg-color: theme(colors.#{$bg-color}.600);
+  }
+
+  &:disabled {
+    --frekui-btn-bg-color: theme(colors.#{$bg-color}.600);
+    --frekui-btn-text-color: theme(colors.neutral.100);
+  }
+}
+
+@mixin button-flat-builder($color) {
+  --frekui-btn-bg-color: theme(colors.#{$color}.200);
+  --frekui-btn-text-color: theme(colors.#{$color}.500);
+
+  &:hover {
+    --frekui-btn-bg-color: theme(colors.#{$color}.100);
+  }
+
+  &:active {
+    --frekui-btn-bg-color: theme(colors.#{$color}.300);
+  }
+}
+
+@mixin alert-builder($color) {
+  @apply bg-#{$color}-200 text-#{$color}-900 fill-#{$color}-900 border-#{$color}-300;
+}

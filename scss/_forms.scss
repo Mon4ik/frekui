@@ -1,0 +1,7 @@
+input.control, textarea.control {
+  @apply px-4 py-2 bg-white border rounded-xl;
+
+  &:disabled {
+    @apply bg-neutral-200;
+  }
+}

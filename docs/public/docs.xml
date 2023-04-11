@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<docs>
+    <group title="Setup">
+        <document filename="installation"
+                  title="Installation" />
+
+    </group>
+    <group title="Components">
+        <document filename="paragraphs"
+                  title="Paragraphs" />
+    </group>
+</docs>
