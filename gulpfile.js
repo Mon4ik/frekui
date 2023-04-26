@@ -49,11 +49,10 @@ gulp.task("build:min", () => {
 
 })
 
-gulp.task("build:standalone", () => {
-    console.log(tailwindcss("tailwind.config.js"))
+gulp.task("build:standalone", async () => {
     return startingBuild()
         .pipe(postcss([
-            tailwindcss("tailwind.config.js"),
+            tailwindcss("./tailwind.config.js"),
             cssnano({
                 zindex: false,
                 discardComments: {
@@ -65,7 +64,7 @@ gulp.task("build:standalone", () => {
             suffix: ".standalone",
             extname: ".css"
         }))
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist'))
 
 })
 

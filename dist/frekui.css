@@ -48,13 +48,13 @@
 .btn.btn-border-success {
   --frekui-btn-bg-color: rgba(0 0 0 / 0);
   --frekui-btn-text-color: theme(colors.black);
-  @apply border-border-color-500;
+  @apply border-green-500;
 }
 .btn.btn-border-success:hover {
-  @apply border-border-color-400;
+  @apply border-green-400;
 }
 .btn.btn-border-success:active {
-  @apply border-border-color-600;
+  @apply border-green-600;
 }
 .btn.btn-danger {
   --frekui-btn-bg-color: theme(colors.red.500);
@@ -83,13 +83,13 @@
 .btn.btn-border-danger {
   --frekui-btn-bg-color: rgba(0 0 0 / 0);
   --frekui-btn-text-color: theme(colors.black);
-  @apply border-border-color-500;
+  @apply border-red-500;
 }
 .btn.btn-border-danger:hover {
-  @apply border-border-color-400;
+  @apply border-red-400;
 }
 .btn.btn-border-danger:active {
-  @apply border-border-color-600;
+  @apply border-red-600;
 }
 .btn.btn-warning {
   --frekui-btn-bg-color: theme(colors.yellow.500);
@@ -118,13 +118,13 @@
 .btn.btn-border-warning {
   --frekui-btn-bg-color: rgba(0 0 0 / 0);
   --frekui-btn-text-color: theme(colors.black);
-  @apply border-border-color-500;
+  @apply border-yellow-500;
 }
 .btn.btn-border-warning:hover {
-  @apply border-border-color-400;
+  @apply border-yellow-400;
 }
 .btn.btn-border-warning:active {
-  @apply border-border-color-600;
+  @apply border-yellow-600;
 }
 .btn.btn-info {
   --frekui-btn-bg-color: theme(colors.blue.500);
@@ -153,13 +153,13 @@
 .btn.btn-border-info {
   --frekui-btn-bg-color: rgba(0 0 0 / 0);
   --frekui-btn-text-color: theme(colors.black);
-  @apply border-border-color-500;
+  @apply border-blue-500;
 }
 .btn.btn-border-info:hover {
-  @apply border-border-color-400;
+  @apply border-blue-400;
 }
 .btn.btn-border-info:active {
-  @apply border-border-color-600;
+  @apply border-blue-600;
 }
 .btn.loading {
   opacity: 50%;
