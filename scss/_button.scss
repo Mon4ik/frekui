@@ -10,48 +10,32 @@
     @apply bg-white text-black border;
 
     &:hover {
-      @apply bg-neutral-100
+      @apply bg-neutral-100;
     }
 
     &:active {
-      @apply bg-neutral-200
+      @apply bg-neutral-200;
     }
   }
 
-  &.btn-success {
-    @include mixins.button-builder("green", "white");
+  &.btn-flat-none {
+    @apply bg-white text-black;
+
+    &:hover {
+      @apply bg-neutral-100;
+    }
+
+    &:active {
+      @apply bg-neutral-200;
+    }
   }
 
-  &.btn-flat-success {
-    @include mixins.button-flat-builder("green");
-  }
+  // colorful buttons:
 
-
-  &.btn-danger {
-    @include mixins.button-builder("red", "white");
-  }
-
-  &.btn-flat-danger {
-    @include mixins.button-flat-builder("red");
-  }
-
-
-  &.btn-warning {
-    @include mixins.button-builder("yellow", "white");
-  }
-
-  &.btn-flat-warning {
-    @include mixins.button-flat-builder("yellow");
-  }
-
-
-  &.btn-info {
-    @include mixins.button-builder("blue", "white");
-  }
-
-  &.btn-flat-info {
-    @include mixins.button-flat-builder("blue");
-  }
+  @include mixins.button-builder("success", "green",  "white");
+  @include mixins.button-builder("danger",  "red",    "white");
+  @include mixins.button-builder("warning", "yellow", "white");
+  @include mixins.button-builder("info",    "blue",   "white");
 
   &.loading {
     opacity: 50%;

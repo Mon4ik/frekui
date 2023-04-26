@@ -12,6 +12,15 @@
 .btn.btn-none:active {
   @apply bg-neutral-200;
 }
+.btn.btn-flat-none {
+  @apply bg-white text-black;
+}
+.btn.btn-flat-none:hover {
+  @apply bg-neutral-100;
+}
+.btn.btn-flat-none:active {
+  @apply bg-neutral-200;
+}
 .btn.btn-success {
   --frekui-btn-bg-color: theme(colors.green.500);
   --frekui-btn-text-color: theme(colors.white);
@@ -35,6 +44,17 @@
 }
 .btn.btn-flat-success:active {
   --frekui-btn-bg-color: theme(colors.green.300);
+}
+.btn.btn-border-success {
+  --frekui-btn-bg-color: rgba(0 0 0 / 0);
+  --frekui-btn-text-color: theme(colors.black);
+  @apply border-border-color-500;
+}
+.btn.btn-border-success:hover {
+  @apply border-border-color-400;
+}
+.btn.btn-border-success:active {
+  @apply border-border-color-600;
 }
 .btn.btn-danger {
   --frekui-btn-bg-color: theme(colors.red.500);
@@ -60,6 +80,17 @@
 .btn.btn-flat-danger:active {
   --frekui-btn-bg-color: theme(colors.red.300);
 }
+.btn.btn-border-danger {
+  --frekui-btn-bg-color: rgba(0 0 0 / 0);
+  --frekui-btn-text-color: theme(colors.black);
+  @apply border-border-color-500;
+}
+.btn.btn-border-danger:hover {
+  @apply border-border-color-400;
+}
+.btn.btn-border-danger:active {
+  @apply border-border-color-600;
+}
 .btn.btn-warning {
   --frekui-btn-bg-color: theme(colors.yellow.500);
   --frekui-btn-text-color: theme(colors.white);
@@ -84,6 +115,17 @@
 .btn.btn-flat-warning:active {
   --frekui-btn-bg-color: theme(colors.yellow.300);
 }
+.btn.btn-border-warning {
+  --frekui-btn-bg-color: rgba(0 0 0 / 0);
+  --frekui-btn-text-color: theme(colors.black);
+  @apply border-border-color-500;
+}
+.btn.btn-border-warning:hover {
+  @apply border-border-color-400;
+}
+.btn.btn-border-warning:active {
+  @apply border-border-color-600;
+}
 .btn.btn-info {
   --frekui-btn-bg-color: theme(colors.blue.500);
   --frekui-btn-text-color: theme(colors.white);
@@ -107,6 +149,17 @@
 }
 .btn.btn-flat-info:active {
   --frekui-btn-bg-color: theme(colors.blue.300);
+}
+.btn.btn-border-info {
+  --frekui-btn-bg-color: rgba(0 0 0 / 0);
+  --frekui-btn-text-color: theme(colors.black);
+  @apply border-border-color-500;
+}
+.btn.btn-border-info:hover {
+  @apply border-border-color-400;
+}
+.btn.btn-border-info:active {
+  @apply border-border-color-600;
 }
 .btn.loading {
   opacity: 50%;

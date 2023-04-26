@@ -50,6 +50,7 @@ gulp.task("build:min", () => {
 })
 
 gulp.task("build:standalone", () => {
+    console.log(tailwindcss("tailwind.config.js"))
     return startingBuild()
         .pipe(postcss([
             tailwindcss("tailwind.config.js"),
